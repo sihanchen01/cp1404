@@ -1,0 +1,4 @@
+51  is Passable
+38  is Bad
+52  is Passable
+5   is Bad
