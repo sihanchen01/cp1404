@@ -1,0 +1,14 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'vertical'
+        id: main
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.2
+        Button:
+            text: "Create Labels"
+            on_release: app.create_labels()
+        Button:
+            text: "Clear Labels"
+            on_release: app.clear_all()
