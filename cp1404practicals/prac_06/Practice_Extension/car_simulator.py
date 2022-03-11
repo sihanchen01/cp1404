@@ -32,7 +32,7 @@ def main():
 
 def create_car() -> Car:
     car_name = input(WELCOME)
-    return Car(fuel=100, name=car_name)
+    return Car(name=car_name, fuel=100)
 
 
 def show_car_info(car: Car) -> None:
