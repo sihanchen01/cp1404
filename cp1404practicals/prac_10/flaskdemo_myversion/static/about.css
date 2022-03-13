@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+
+#nav > a {
+	color: white;
+	font-size: 2rem;
+}
+
+#content {
+	min-height: 65vh;
+	background-color: #8a2be2;
+	padding-top: 30vh;
+	display: flex;
+	justify-content: center;
+	font-size: 8vw;
+}
+
+.about-page {
+	margin: auto;
+	font-family: monospace;
+	text-align: center;
+	height: fit-content;
+
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 80%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
+	}
+}
+
+#footer {
+	width: 100%;
+	bottom: 0;
+	font-size: 2rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	text-align: center;
+}
+
+#footer > p > a {
+	color: rgba(255, 255, 255, 0.6);
+}

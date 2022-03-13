@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block head %}<title>Wikipedia - {{ page.title }}</title>{% endblock %}
+{% block content %}
+{% if page %}
+{#    DONE: add page title and more... #}
+  <div class="search-results" style="text-align: center; width: 60%; margin: auto">
+    <h2 style="font-size: 3rem;">Summary </h2>
+    <div class="search-images" style="max-height: 70vh; overflow: hidden;">
+      {% for image in page.images %}
+        <img src="{{ image }}" alt="{{ page.title }}" style="width: 160px; height: 160px;">
+      {% endfor %}
+    </div>
+    <p style="font-size: 2rem;"><a href="{{ page.url }}">{{ page.title }}</a></p>
+    <div class="search-summary" style="max-height: 70vh; overflow: hidden;">
+      <p style="font-size: 1.2rem;">{{ page.summary }}</p>
+    </div>
+    <div class="search-content" style="max-height: 70vh; overflow: hidden;">
+      <h3 style="font-size: 2rem;">Page Content</h3>
+      <p style="font-size: 1.2rem;">{{ page.content }}</p>
+    </div>
+  </div>
+{% else %}
+  <h1>Error</h1>
+{% endif %}
+{% endblock %}
