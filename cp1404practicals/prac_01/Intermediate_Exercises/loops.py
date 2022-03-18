@@ -19,7 +19,8 @@ for _ in range(num):
     print("*", end="")
 print()
 
-# d. print n lines of increasing stars. Using the same number as above print lines of increasing stars, starting at 1. E.g. if 4 was the number entered, your single loop should print
+# d. print n lines of increasing stars. Using the same number as above print lines of increasing stars, starting at 1.
+# Example: if 4 was the number entered, your single loop should print
 lines = int(input("Number of lines: "))
 for line in range(lines):
     for _ in range(line+1):
