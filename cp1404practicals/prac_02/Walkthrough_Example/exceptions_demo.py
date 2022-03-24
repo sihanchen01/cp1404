@@ -20,7 +20,6 @@ except ValueError:
 #     print("Cannot divide by zero!")
 print("Finished.")
 
-
 # Questions
 #   1.When will a ValueError occur?
 #       Ans: When numrator or denominator is not a valid number.
