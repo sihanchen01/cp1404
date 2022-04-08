@@ -7,23 +7,27 @@ FILENAME = "subject_data.txt"
 
 
 def main():
-    class_infos = get_data()
-    for class_info in class_infos:
+    subject_infos = get_data()
+    print_subjects(subject_infos)
+
+
+def print_subjects(subject_infos):
+    for subject_info in subject_infos:
         print(
-            f"{class_info[0]} is taught by {class_info[1]:12} and has {class_info[2]:>3} students")
+            f"{subject_info[0]} is taught by {subject_info[1]:12} and has {subject_info[2]:>3} students")
 
 
 def get_data():
     """Read data from file formatted like: subject,lecturer,number of students."""
     input_file = open(FILENAME)
-    class_infos = []
+    subject_infos = []
     for line in input_file:
         line.strip()
         line_list = line.split(",")
         line_list[2] = int(line_list[2])
-        class_infos.append(line_list)
+        subject_infos.append(line_list)
     input_file.close()
-    return class_infos
+    return subject_infos
 
 
 main()
