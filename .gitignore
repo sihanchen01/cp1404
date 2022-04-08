@@ -1,4 +1,11 @@
-.idea/
 __pycache__/
-~/
-.DS_Store
+# pycharm file
+.idea/
+# vscode
+.vscode/
+# macos files
+.DS_Store/
+# vim files
+*~
+*.swp
+*.swo
