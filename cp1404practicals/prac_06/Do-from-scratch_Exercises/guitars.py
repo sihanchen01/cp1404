@@ -24,7 +24,7 @@ def main():
         year_ = guitars[i].year
         cost_ = guitars[i].cost
         is_vintage = guitars[i].is_vintage()
-        output = f"Guitar {i+1}:  {name_:>{max_name_len}} ({year_}), worth $ {cost_:>{max_cost_len},.2f}"
+        output = f"Guitar {i + 1}:  {name_:>{max_name_len}} ({year_}), worth $ {cost_:>{max_cost_len},.2f}"
         suffix = " (vintage)" if is_vintage else ""
         print(output + suffix)
 

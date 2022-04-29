@@ -14,8 +14,6 @@ class ProgrammingLanguage:
     year: int
     typing: Typing
 
-    # def __init__(self, name: str, typing: Typing, reflection: bool, year: int)
-
     @property
     def typing(self):
         return self._typing
