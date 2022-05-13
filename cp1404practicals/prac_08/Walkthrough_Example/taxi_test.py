@@ -10,7 +10,7 @@ class TestTaxi(unittest.TestCase):
         self.taxi.drive(40)
         print(str(self.taxi))
         print(f"Current fare: {self.taxi.get_fare()}")
-        self.assertEqual(self.taxi.get_fare(), 40*1.23)
+        self.assertEqual(self.taxi.get_fare(), 40 * 1.23)
 
     def test_reset_fare(self):
         print()
@@ -19,7 +19,7 @@ class TestTaxi(unittest.TestCase):
         self.taxi.drive(100)
         print(str(self.taxi))
         print(f"Current fare: {self.taxi.get_fare()}")
-        self.assertEqual(self.taxi.get_fare(), 60*1.23)
+        self.assertEqual(self.taxi.get_fare(), 60 * 1.23)
 
 
 if __name__ == "__main__":

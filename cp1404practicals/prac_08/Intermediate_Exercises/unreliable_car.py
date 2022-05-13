@@ -1,4 +1,3 @@
-from dis import dis
 from car import Car
 import random
 
