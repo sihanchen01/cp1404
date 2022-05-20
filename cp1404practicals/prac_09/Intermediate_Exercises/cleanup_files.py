@@ -55,7 +55,7 @@ def get_fixed_filename(filename: str) -> str:
     if index_of_parenthese != -1:
         name_first_part = name[:index_of_parenthese]
         name_second_part = name[index_of_parenthese:]
-    # if word is a single word and from the second character, if uppercase letter exist (camelword), reformat
+        # if word is a single word and from the second character, if uppercase letter exist (camelword), reformat
         new_name = convert_camelcase(name_first_part) + " " + name_second_part
     else:
         new_name = convert_camelcase(name)
@@ -81,7 +81,6 @@ def demo_walk():
 
 # main()
 demo_walk()
-
 
 # testlist = ['Away In A Manger.txt', 'SilentNight.txt',
 #             'O little town of bethlehem.TXT', 'ItIsWell (oh my soul).txt', 'test.txt', 'test2Test.txt']
